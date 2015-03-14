@@ -1,0 +1,27 @@
+<!doctype html5>
+<html>
+<head></head>
+<body>
+    <svg version="1.1"
+         baseProfile="full"
+         width="300" height="200"
+         xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="red" />
+      <circle cx="150" cy="100" r="80" fill="green" />
+      <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+    </svg>
+
+    <p><button>Download</button></p>
+
+    <script src="https://rawgit.com/exupero/saveSvgAsPng/gh-pages/saveSvgAsPng.js"></script>
+    <script src="https://rawgit.com/MrRio/jsPDF/master/dist/jspdf.debug.js"></script>
+    <script src="svg_to_pdf.js"></script>
+    <script>
+        document.querySelector("button").addEventListener("click", function () {
+            svg_to_pdf(document.querySelector("svg"), function (pdf) {
+                download_pdf('SVG.pdf', pdf.output('dataurlstring'));
+            });
+        });
+    </script>
+</body>
+</html>
