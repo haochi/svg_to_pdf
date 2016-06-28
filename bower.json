@@ -1,0 +1,18 @@
+{
+  "name": "svg_to_pdf",
+  "main": "svg_to_pdf.js",
+  "homepage": "https://github.com/haochi/svg_to_pdf",
+  "description": "Exporting SVG to PDF with client side JavaScript",
+  "authors": [
+    "haochi"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
